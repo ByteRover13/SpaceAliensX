@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpaceAliensX</title>
     <link rel="stylesheet" href="/static/style/main.css">
-    <link rel="stylesheet" href="/static/style/header.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="header flex text-center justify-around items-center">
+    <header class="header flex text-center justify-around items-center max-[950px]:gap-[10em]">
 		<div class="logo">
 		<img class="logo1" src="static/img/astronas.png" alt="" width="85">
 		</div>
@@ -19,13 +18,13 @@
 		<label for="toggle"><img class="img2 h-[8vh] p-[7px]"  src="static/img/menu.svg" alt="menu"></label>
 	
 	
-		<nav class="navigation text-center justify-center py-5 px-7">
-			<ul>
-				<li><a href="#">  Takenomics  </a></li>
-				<li><a href="#"> Leaderboards </a></li>
-				<li><a href="#">  Community </a></li>
-                <div class="join">
-                <button class="join-b">Join Now</button>
+		<nav class="navigation text-center justify-center py-5 px-7 max-[950px]:absolute left-0 right-0 z-10 top-[15%]">
+			<ul class="list-none">
+				<li class="p-2.5 relative float-left scale-110 transition duration-150 ease hover:scale-125 transition duration-300 ease-in-out max-[950px]:w-full"><a class="text-white text-[16px] p-5 no-underline" href="#">  Takenomics  </a></li>
+				<li class="p-2.5 relative float-left scale-110 transition duration-150 ease hover:scale-125 transition duration-300 ease-in-out max-[950px]:w-full"><a class="text-white text-[16px] p-5 no-underline" href="#"> Leaderboards </a></li>
+				<li class="p-2.5 relative float-left scale-110 transition duration-150 ease  hover:scale-125 transition duration-300 ease-in-out max-[950px]:w-full"><a class="text-white text-[16px] p-5 no-underline" href="#">  Community </a></li>
+                <div class="join inline">
+                <button class="join-b rounded-xl border-solid p-2.5 text-[16px] duration-[.2s] bg-yellow-500 hover:transition-[.2s]">Join Now</button>
                 </div>
             </ul>
 		</nav>
@@ -33,12 +32,12 @@
     <br>
     <br>
     <main class="max-w-6xl mx-auto my-auto	">
-            <div class="container max-w-7xl mx-auto py-8 w-full justify-center inline-flex items-center">
+            <div class="container max-w-7xl mx-auto py-8 w-full justify-center inline-flex items-center max-[950px]:inline-flex flex-wrap">
                 <div class="text float-left w-6/12 top-12 bottom-3 relative">
-                    <h1 class="title text-5xl relative bottom-11 font-tektur font-semibold">Unleash the Power of  Memes in a <span class="title-span inline-block">New Reality </span></h1>
-                    <p class="parrafo-1 text-2xl bottom-12 relative font-medium font-tektur pt-2 text-[antiquewhite]">Welcome to MemeVerse , where meme tokens meet the metaverse for a groundbreaking fusion of creativty, community and cryptocurrency</p>
-                    <div class="buttons flex text-center relative bottom-12 px-px font-tektur">
-                        <a  class="pt-3 pb-3" href=""><button class="get rounded-xl border-solid text-[20px] text-black">Join Now</button></a>
+                    <h1 class="title text-5xl relative bottom-11 font-tektur font-semibold max-[950px]:grid justify-center items-center">Unleash the Power of  Memes in a <span class="title-span inline-block text-transparent bg-clip-text">New Reality </span></h1>
+                    <p class="parrafo-1 text-2xl bottom-12 relative font-medium font-tektur pt-2 text-[antiquewhite] max-[950px]:text-center">Welcome to MemeVerse , where meme tokens meet the metaverse for a groundbreaking fusion of creativty, community and cryptocurrency</p>
+                    <div class="buttons flex text-center relative bottom-12 px-px font-tektur max-[950px]:justify-center">
+                        <a  class="pt-3 pb-3" href=""><button class="get transition duration-500 ease-in-out py-3.5	px-10 rounded-xl border-solid text-[20px] text-black bg-cyan-600	text-black hover:bg-yellow-500">Join Now</button></a>
                     </div>
                 </div>
                 <div class="image px-px ">
@@ -46,13 +45,13 @@
                 </div>
             </div>
 
-            <h1 class="title-2 text-center font-semibold text-4xl">Briging Meme <span class="colored"> Communities Together </span></h1>
+            <h1 class="title-2 text-center font-semibold text-4xl">Briging Meme <span class="colored text-transparent bg-clip-text"> Communities Together </span></h1>
             <section class="Card-two flex items-center text-center max-w-6xl mx-auto">
                 <div class="card2">
-                    <img class="img-astro justify-center h-auto" src="static/img/fondo4.png">
+                    <img class="img-astro justify-center h-auto w-[35vw] max-w-[38vw]" src="static/img/fondo4.png">
                 </div>
                 <div class="cajaone w-[36em]">
-                <p class="parrafo-astro block text-left pt-3 text-base text-[antiquewhite]">At MemeVerse, we believe that meme tokens are more than just digital assets- they0re a shared passion , a source of creativity, and a symbol of community, Our mission is simple yet powerfull:<br>
+                <p class="parrafo-astro block text-left pt-3 text-base text-[antiquewhite] p-7">At MemeVerse, we believe that meme tokens are more than just digital assets- they0re a shared passion , a source of creativity, and a symbol of community, Our mission is simple yet powerfull:<br>
                     <br>
                 To bring together meme communities from aorund the crypto world, creating a space where their tokens can flourish in a thriving metaverse, We celebrate the diversity and uniqueness od each meme token , fostering connections, collaborations, and sense of belonging that transcend individual projects. <br>
                 <br>
@@ -60,12 +59,12 @@
                 </div>
             </section>
             <br>
-            <h1 class="title-2 text-center font-semibold text-4xl"><span class="colored">Takenomics</span></h1>
-            <section class="Card-thre flex items-center text-center justify-center flex-row-reverse gap-4">
+            <h1 class="title-2 text-center font-semibold text-4xl"><span class="colored text-transparent bg-clip-text">Takenomics</span></h1>
+            <section class="Card-thre flex items-center text-center justify-center flex-row-reverse gap-4 max-[950px]:flex-wrap">
                 <div class="card2">
                     <img class="img-fondo3 justify-center h-auto w-[25vw] max-w-[26vw]" src="static/img/fondo3.png">
                 </div>
-                <div class="cajatwo">
+                <div class="cajatwo max-[950px]:contents ">
                 <h1 class="astro-h1 text-4xl items-end text-center bg-#1882abe8 font-semibold">Unlocking the Potencial<br>of MVO Token</h1>
                 <p class="parrafo-3 block pt-3 text-lg bg-#f0ffff w-[44vw] text-balance text-[antiquewhite]">At the heart of MemeVerse lies The MVO(Meme Verse Online), a powerfull digital assets that fuels out ecosystem and unlocks a world of possibilites , MVO isn ot just a token; it ' is the key to your journey in our metaverse. By holding and staking MVO, you become an integral part of the MemeVerse Community.</p>
                 </div>
@@ -78,4 +77,5 @@
                 <p class="footer-p">Politcs</p>
             </footer>
     </main>
+    <script src="/menu.js"></script>
 </html>

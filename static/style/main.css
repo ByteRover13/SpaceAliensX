@@ -10,28 +10,46 @@ body{
     background:radial-gradient(circle, rgba(0,204,3,0.927608543417367) 0%, rgba(18,89,18,1) 2%, rgba(23,48,23,1) 46%, rgba(3,73,3,0.896796218487395) 100%);
     background-repeat: no-repeat;
 }
-.get{
-    padding: 15px 40px;
-    font-family: 'Tektur', sans-serif;
-    transition: 1s ease-in-out;
-}
-.get, .buttons a .get:hover {
-    color: rgb(6 6 6);
-    background-image: initial;
-    background-color: rgb(209 206 13);
-}
-.img-astro{
-    width: 35vw;
-    max-width: 38vw;
-}
-
-.colored{
-    color: transparent; /* Hacemos el texto transparente para revelar el fondo */
+.colored,.title-span{
     background-image: linear-gradient(to right, #00ede2, #bb00b5); /* Gradiente de rojo a verde */
-    background-clip: text; /* Hace que el fondo sea visible solo donde está el texto */
 }
-.title-span{
-    color: transparent;
-    background-image: linear-gradient(to right, #00ede2, #bb00b5);
-    background-clip: text;
+/* HEADER NAVIGATION */
+
+.header .navigation ul li a:hover{
+    color: rgba(230, 226, 7, 0.719);
+}
+.header .navigation ul li:hover > ul{
+    display: initial;
+    }
+.img2.pressed {
+    transform: rotate(90deg);
+    transition: transform 0.1s ease; /* Agrega una transición suave al transform */
+    }
+#toggle, .header label{
+    display: none;
+    cursor: pointer;
+    }
+.join-b:hover{
+    color: azure;
+    background: rgb(15, 103, 138);
+    } 
+
+/* MEDIA QUERY */    
+@media(max-width: 949px){
+.header label{
+    display: initial;
+    }
+.header .navigation{
+    background: rgb(180 223 5 / 42%);
+    display: none;
+    } 
+#toggle:checked ~ .navigation {
+        display: block;
+    }
+.title{
+    text-align: center;
+}
+.image img {
+    content: url('../img/fondo5.png'); /* Cambia la imagen del alien para pantallas de 950px o menos */
+}
 }
