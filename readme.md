@@ -1,9 +1,7 @@
 # Template
 A template made with html, css and the Tailwind framework.
-
-![imgs1](/static/template/1.png)
+<img src="/static/template/1.png" width="1200"/>
 #
-![imgs2](/static/template/2.png)
-<img src="/static/template/2.png" width="800"/>
+<img src="/static/template/2.png" width="1200"/>
 
 
