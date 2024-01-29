@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tektur', sans-serif;
+}
+body{
+    background: rgb(0,204,3);
+    background:radial-gradient(circle, rgba(0,204,3,0.927608543417367) 0%, rgba(18,89,18,1) 2%, rgba(23,48,23,1) 46%, rgba(3,73,3,0.896796218487395) 100%);
+    background-repeat: no-repeat;
+}
+.get{
+    padding: 15px 40px;
+    font-family: 'Tektur', sans-serif;
+    transition: 1s ease-in-out;
+}
+.get, .buttons a .get:hover {
+    color: rgb(6 6 6);
+    background-image: initial;
+    background-color: rgb(209 206 13);
+}
+.img-astro{
+    width: 35vw;
+    max-width: 38vw;
+}
+
+.colored{
+    color: transparent; /* Hacemos el texto transparente para revelar el fondo */
+    background-image: linear-gradient(to right, #00ede2, #bb00b5); /* Gradiente de rojo a verde */
+    background-clip: text; /* Hace que el fondo sea visible solo donde está el texto */
+}
+.title-span{
+    color: transparent;
+    background-image: linear-gradient(to right, #00ede2, #bb00b5);
+    background-clip: text;
+}

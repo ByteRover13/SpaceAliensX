@@ -1,0 +1,172 @@
+.join{
+    display: inline;
+}
+.join-b{
+    background: transparent;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Tektur', sans-serif;
+    background: #9b9721;
+    transition: .2s ease;
+
+}
+.join-b:hover{
+    transition: .2s ease;
+    background: rgb(15, 103, 138);
+    color: azure;
+}
+.navigation ul {
+    list-style: none;
+}
+    
+.header .navigation ul li {
+    padding: 10px;
+    float: left;
+    position: relative;
+    transform: scale(1.1); /* Aumenta el tamaño de la sección al 110% */
+    transition: transform 0.3s ease;
+}
+    
+.header .navigation ul li a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 20px;
+    font-family: 'Tektur', sans-serif;
+    transform: scale(1.1); /* Aumenta el tamaño de la sección al 110% */
+    transition: transform 0.3s ease;
+
+}
+.header .navigation ul li:hover{
+    transform: scale(1.2);
+}
+    
+.header .navigation ul li a:hover{
+    color: rgba(230, 226, 7, 0.719);
+}
+    .header .navigation ul li ul {
+        position: absolute;
+        right: 0;
+        width: auto;
+        background-color: #202c40;
+        display: none;
+        border-radius: 0px 0px 15px 15px;
+    }
+    
+    .header .navigation ul li ul li a {
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        text-transform: capitalize;
+        border-radius: 14px;
+    }
+    
+     .header .navigation ul li ul li ul{
+        position: absolute;
+        top: 0;
+        right: 300px;
+    }
+
+    
+    .header .navigation ul li:hover > ul{
+        display: initial;
+    }
+    
+    
+    #toggle, .header label{
+        display: none;
+        cursor: pointer;
+    }
+
+
+/* HEADER NAVIGATION */
+@media(max-width: 950px){
+    .header label{
+        display: initial;
+    }
+    .join-b{
+        display: none;
+    }
+    .header{
+        padding: 20px 10px;
+        gap: 10em;
+    }
+    
+    .header .navigation{
+        position: absolute;
+        top: 13%;
+        left: 0;
+        right: 0;
+        background: rgb(180 223 5 / 42%);
+        display: none;
+        z-index: 1;
+    }
+    
+    
+    .header .navigation ul li {
+        width: 100%;
+    }
+    
+    .header .navigation ul li a {
+        padding: 8px 30px 8px 10%;
+        gap: 10px;
+        display: flex;
+    }
+    
+    .header .navigation ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+    
+    }
+    .header .navigation ul li ul li {
+        background-color: transparent;
+    }    
+    #toggle:checked ~ .navigation {
+        display: block;
+    }
+
+}
+
+
+@media(max-width: 949px){
+.container{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.title{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.parrafo-1{
+    text-align: center;
+}
+.astro-h1{
+    padding: 10px 25px 0px 0px;
+}
+
+.buttons{
+    justify-content: center;
+}
+
+.Card-thre{
+    flex-wrap: wrap;
+}
+
+.cajatwo{
+    display: contents;
+}
+}
+
+@media (max-width: 948px) {
+    .image img {
+        content: url('../img/fondo5.png'); /* Cambia la imagen del alien para pantallas de 950px o menos */
+        
+    }
+}
